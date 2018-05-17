@@ -1,0 +1,4 @@
+{
+	"exclude" : "**/*+(app|spec|index|route).ts*",
+	"out": "doc"
+}

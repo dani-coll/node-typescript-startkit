@@ -1,0 +1,41 @@
+{
+    "env": {
+        "node": true,
+        "mocha": true,
+        "es6": true
+    },
+    "parser": "typescript-eslint-parser",
+    "parserOptions": {
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "modules": true
+        }
+    },
+    "extends": [
+        "airbnb-base"
+    ],
+    "rules": {
+        "indent": ["warn", "tab"],
+        "no-cond-assign": ["warn", "always"],
+        "one-var": "off", 
+        "init-declarations": "off",
+        "no-console": "off",
+        "no-inline-comments": "off",
+        "linebreak-style": ["error", "windows"],
+        "semi": ["warn", "never"],
+        "function-paren-newline" : "off",
+        "comma-dangle": "off",
+        "eol-last": "off",
+        "import/extensions": "off",
+		"import/no-unresolved": "off",
+		"no-tabs": "off",
+		"no-mixed-spaces-and-tabs" : "off",
+		"no-underscore-dangle" : "off",
+		"no-undef" : "off",
+		"no-unused-vars" : "off",
+		"no-return-await" : "off",
+		"consistent-return" : "off",
+		"no-shadow": "off",
+		"no-restricted-globals": "off"
+    }
+}

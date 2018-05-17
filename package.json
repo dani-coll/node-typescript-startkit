@@ -1,0 +1,36 @@
+{
+  "name": "node-typescript-startkit",
+  "version": "1.0.0",
+  "description": "Start Kit for a node API",
+  "main": "\u001b[A\u001b[D\u001b[B\u001b[C\u001b[C",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc-watch --outDir ./dist --onSuccess \"node ./dist/index.js\" ",
+    "devtest": "tsc-watch --outDir ./dist --onSuccess \"mocha ./dist/**/*.spec.js node ./dist/index.js\" ",
+    "test": "tsc && mocha dist/**/*.spec.js",
+    "lint": "eslint ./src --ext ts",
+    "lint:fix": "eslint ./src --fix --ext ts",
+    "doc": "typedoc --options typedoc.json src"
+  },
+  "author": "Daniel Coll",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.0.3",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "request": "^2.85.0",
+    "supertest": "^3.0.0",
+    "supertest-session": "^3.2.0"
+  },
+  "devDependencies": {
+    "@types/mocha": "^5.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "mocha": "^5.1.1",
+    "tsc-watch": "^1.0.21",
+    "typedoc": "^0.11.1",
+    "typescript-eslint-parser": "^15.0.0"
+  }
+}
