@@ -1,9 +1,9 @@
 import User from '../models/User'
 
 class UserService {
-	async getDummyUser(): Promise<User> {
+	async getDummyUser(email): Promise<User> {
 		let user: User = new User()
-		user.email = "dummy@mailinator.com"
+		user.email = email
 		user.role = "admin"
 		return user
 	}
