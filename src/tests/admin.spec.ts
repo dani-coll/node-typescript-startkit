@@ -5,12 +5,12 @@ import app from '../app'
 
 const adminSession = session(app)
 
-describe('2 - Login', () => {
+describe('1 - Login', () => {
 	it('should return success', () =>
 		adminSession
 			.post('/api/login')
 			.send({
-				email: 'manningblankenship@quotezart.com'
+				email: 'dummy@mailinator.com'
 			})
 			.set('Content-Type', 'application/x-www-form-urlencoded')
 			.expect(200)
@@ -18,12 +18,12 @@ describe('2 - Login', () => {
 	)
 })
 
-describe('3 - Login', () => {
+describe('2 - Login', () => {
 	it('should return 400', () =>
 		adminSession
 			.post('/api/login')
 			.send({
-				email: 'manningblankenship@quotezart.com'
+				email: 'dummy@mailinator.com'
 			})
 			.set('Content-Type', 'application/x-www-form-urlencoded')
 			.expect(400)
