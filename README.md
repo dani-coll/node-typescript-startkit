@@ -1,4 +1,4 @@
-# Insurance API
+# Node typescript API
 
 ## Features
 
